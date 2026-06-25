@@ -88,7 +88,7 @@ npm start
 ![Students](screenshots/students.png)
 
 ### Add Student Form
-![Add Student](screenshots/add-student.png)
+![Add Student](screenshots/addstudent.png)
 
 ### Courses Page
 ![courses](screenshots/courses.png)
@@ -103,10 +103,8 @@ npm start
 ![courses](screenshots/editstudent.png)
 
 ### Add Courses page
-![Students](screenshots/addcourses.png)
+![Students](screenshots/addcourse.png)
 
-### Course Student List 
-![Add Student](screenshots/coursestudentlist.png)
 
 ## 🔮 Future Enhancements
 
