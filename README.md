@@ -84,6 +84,9 @@ npm start
 ### Login Page
 ![Login](screenshots/login.png)
 
+### Signup Page
+![Login](screenshots/signup.png)
+
 ### Student List
 ![Students](screenshots/students.png)
 
