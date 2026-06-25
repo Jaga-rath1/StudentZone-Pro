@@ -1,0 +1,83 @@
+<% layout("/layouts/boilerplate") %>
+<<div class="container py-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="fw-bold">📚 <%= c1.course1 %></h1>
+            <p class="text-muted mb-0">
+                Students enrolled in this course
+            </p>
+        </div>
+
+        <a href="/courses" class="btn btn-outline-secondary">
+            ← Back to Courses
+        </a>
+    </div>
+
+    <div class="card shadow-sm border-0">
+
+        <div class="card-header bg-light">
+            <h4 class="mb-0">
+                Enrolled Students
+                <span class="badge bg-primary ms-2">
+                    <%= Students.length %>
+                </span>
+            </h4>
+        </div>
+
+        <div class="card-body">
+
+            <% if(Students.length === 0){ %>
+
+                <div class="alert alert-warning text-center mb-0">
+                    No students are currently enrolled in this course.
+                </div>
+
+            <% } else { %>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Student Name</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <% Students.forEach((student,index)=>{ %>
+
+                                <tr>
+                                    <td>
+                                        <%= index + 1 %>
+                                    </td>
+
+                                    <td>
+                                        <strong><%= student.name %></strong>
+                                    </td>
+
+                                    <td>
+                                        <a href="/users/<%= student._id %>"
+                                           class="btn btn-primary btn-sm">
+                                            View Details
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            <% }) %>
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+            <% } %>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,122 @@
+<% layout("/layouts/boilerplate") %>
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-7">
+
+            <div class="card shadow border-0 rounded-4">
+
+                <div class="card-body p-5">
+
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold">Add New Student</h2>
+                        <p class="text-muted">
+                            Enter student details carefully
+                        </p>
+                    </div>
+
+                    <form
+                        action="/users"
+                        method="POST"
+                        class="needs-validation"
+                        novalidate
+                    >
+
+                        <div class="mb-3">
+                            <label class="form-label">Student Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                class="form-control"
+                                required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter student name.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Age</label>
+                            <input
+                                type="number"
+                                name="age"
+                                class="form-control"
+                                min="1"
+                                required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter a valid age.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Course</label>
+                            <input
+                                type="text"
+                                name="course"
+                                class="form-control"
+                                required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter course name.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Total Fees</label>
+                            <input
+                                type="number"
+                                name="totalfees"
+                                class="form-control"
+                                min="0"
+                                required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter total fees.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Fees Paid</label>
+                            <input
+                                type="number"
+                                name="feespaid"
+                                class="form-control"
+                                min="0"
+                                required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter paid fees.
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Remaining Fees</label>
+                            <input
+                                type="number"
+                                name="remainingfees"
+                                class="form-control"
+                                min="0"
+                                required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter remaining fees.
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary w-100 py-2">
+                            Create Student
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

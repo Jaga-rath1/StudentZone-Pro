@@ -1,0 +1,20 @@
+/* index.ejs */
+.card{
+    transition: all .25s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+body{
+    background:#f8f9fa;
+}
+/* show.ejs */
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}

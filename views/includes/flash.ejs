@@ -1,0 +1,25 @@
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 9999; width: 350px;">
+
+    <% if(successmsg && successmsg.length){ %>
+        <div class="alert alert-success alert-dismissible fade show shadow" role="alert">
+            <strong>✅ Success!</strong> <%= successmsg %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    <% } %>
+
+    <% if(errormsg && errormsg.length){ %>
+        <div class="alert alert-danger alert-dismissible fade show shadow" role="alert">
+            <strong>❌ Error!</strong> <%= errormsg %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    <% } %>
+
+</div>
+<script>
+setTimeout(() => {
+    document.querySelectorAll(".alert").forEach(alert => {
+        alert.classList.remove("show");
+        alert.classList.add("hide");
+    });
+}, 5000);
+</script>

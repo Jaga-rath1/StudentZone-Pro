@@ -1,0 +1,150 @@
+<% layout("/layouts/boilerplate") %>
+<div class="container py-5">
+
+    <!-- Hero Section -->
+    <div class="bg-light rounded-4 shadow-sm p-5 text-center mb-5">
+        <h1 class="display-5 fw-bold mb-3">
+            🎓 StudentZone Dashboard
+        </h1>
+
+        <p class="lead text-muted mb-4">
+            Welcome Back, Admin. Manage students, courses and academic records efficiently.
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="/users" class="btn btn-dark btn-lg">
+                👨‍🎓 View Students
+            </a>
+
+            <a href="/courses" class="btn btn-outline-dark btn-lg">
+                📚 View Courses
+            </a>
+        </div>
+    </div>
+
+    <!-- Action Cards -->
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="card border-0 shadow h-100">
+                <div class="card-body text-center p-5">
+
+                    <div class="fs-1 mb-3">
+                        👨‍🎓
+                    </div>
+
+                    <h3 class="fw-bold">
+                        Students
+                    </h3>
+
+                    <p class="text-muted">
+                        View, update and manage student records.
+                    </p>
+
+                    <a href="/users" class="btn btn-primary">
+                        Manage Students
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card border-0 shadow h-100">
+                <div class="card-body text-center p-5">
+
+                    <div class="fs-1 mb-3">
+                        📚
+                    </div>
+
+                    <h3 class="fw-bold">
+                        Courses
+                    </h3>
+
+                    <p class="text-muted">
+                        Manage courses and enrolled students.
+                    </p>
+
+                    <a href="/courses" class="btn btn-success">
+                        Manage Courses
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card border-0 shadow h-100">
+                <div class="card-body text-center p-5">
+
+                    <div class="fs-1 mb-3">
+                        ➕
+                    </div>
+
+                    <h3 class="fw-bold">
+                        Add Student
+                    </h3>
+
+                    <p class="text-muted">
+                        Register a new student in StudentZone.
+                    </p>
+
+                    <a href="/users/new" class="btn btn-dark">
+                        Create Student
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card border-0 shadow h-100">
+                <div class="card-body text-center p-5">
+
+                    <div class="fs-1 mb-3">
+                        📝
+                    </div>
+
+                    <h3 class="fw-bold">
+                        Add Course
+                    </h3>
+
+                    <p class="text-muted">
+                        Create a new course for enrollment.
+                    </p>
+
+                    <a href="/courses/new" class="btn btn-warning">
+                        Create Course
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="text-center mt-5">
+        <hr>
+
+        <p class="text-muted">
+            StudentZone Administration Panel
+        </p>
+    </div>
+
+</div>
+
+<style>
+.card{
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.btn{
+    border-radius: 12px;
+}
+</style>

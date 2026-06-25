@@ -1,0 +1,69 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="container py-4">
+
+    <div class="d-flex justify-content-end mb-4">
+        <a href="/users/new" class="btn btn-primary rounded-pill px-4">
+            + Add Student
+        </a>
+    </div>
+
+    <div class="row g-4">
+
+        <% for(student of students){ %>
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card border-0 shadow-sm h-100 rounded-4">
+
+                    <div class="card-body">
+
+                        <div class="d-flex align-items-center mb-3">
+
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                 style="width:60px;height:60px;font-size:1.3rem;">
+                                <%= student.name.charAt(0).toUpperCase() %>
+                            </div>
+
+                            <div class="ms-3">
+                                <h5 class="mb-1 fw-bold">
+                                    <%= student.name %>
+                                </h5>
+
+                                <small class="text-muted">
+                                    Student Profile
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <p class="mb-2">
+                            📚 <strong>Course:</strong>
+                            <%= student.course %>
+                        </p>
+
+                        <p class="mb-3">
+                            🎂 <strong>Age:</strong>
+                            <%= student.age %>
+                        </p>
+
+                        <a href="/users/<%= student._id %>"
+                           class="btn btn-outline-primary w-100 rounded-pill">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <% } %>
+
+    </div>
+
+</div>
+
+</body>
