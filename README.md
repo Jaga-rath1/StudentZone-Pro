@@ -90,14 +90,23 @@ npm start
 ### Add Student Form
 ![Add Student](screenshots/add-student.png)
 
-### Login Page
-![Login](screenshots/login.png)
+### Courses Page
+![courses](screenshots/courses.png)
 
-### Student List
-![Students](screenshots/students.png)
+### Add Courses page
+![Students](screenshots/addcourses.png)
 
-### Add Student Form
-![Add Student](screenshots/add-student.png)
+### Course Student List 
+![Add Student](screenshots/coursestudentlist.png)
+
+### Edit Student Page
+![courses](screenshots/editstudent.png)
+
+### Add Courses page
+![Students](screenshots/addcourses.png)
+
+### Course Student List 
+![Add Student](screenshots/coursestudentlist.png)
 
 ## 🔮 Future Enhancements
 
